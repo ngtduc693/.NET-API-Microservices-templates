@@ -1,6 +1,6 @@
 # .NET API Microservices templates
-This is a sample for API Microservices templates that I have diligently researched and designed to help you organize your code clearly
 
+This is a sample for API Microservices templates that I have diligently researched and designed to help you organize your code clearly
 
 Structure Code Standard for reference:
 
@@ -18,7 +18,6 @@ Solution/
 │   │       └── DependencyInjection/
 │   │           ├── Extensions
 │   │           └── Options
-│   |
 │   ├── Application --> 'Handler usercase using mediatR library'/
 │   │   ├── (ref: Domain) => User Repository interface at domainlayer
 │   │   └── Folders/
@@ -49,7 +48,6 @@ Solution/
 │   │           │       └── ...
 │   │           ├── V2
 │   │           └── ...
-│   ├
 │   ├── Domain --> 'Store entity and bussiness logic -> Core application'/
 │   │   ├── (ref: None)
 │   │   └── Folders/
@@ -80,7 +78,6 @@ Solution/
 │   │           ├── Money(decimal Amount, Currency Currency)
 │   │           ├── Email(string Address, string Subject, string Body)
 │   │           └── Address(string Street, string City, string State, string ZipCode, string Country, int? Number, string? Complement)
-│   ├
 │   ├── Infrastructure --> 'Integration with external likes Job, email, provider token ...'/
 │   │   ├── (ref: Application-Persistence)
 │   │   └── Folders/
@@ -92,7 +89,6 @@ Solution/
 │   │       │   ├── Extensions
 │   │       │   └── Options
 │   │       └── EmailService
-│   ├
 │   ├── Infrastructure.MessageBus --> 'Working with rabbitMQ: Consume Command and Event'/
 │   │   ├── (ref: Application)
 │   │   └── Folders/
@@ -105,7 +101,6 @@ Solution/
 │   │       │   └── Options
 │   │       ├── PipeFilters
 │   │       └── PipeObservers
-│   ├
 │   ├── Persistance | Infrastructure.EF --> 'Working with database'/
 │   │   ├── (ref: Domain)
 │   │   └── Fodlers/
@@ -123,7 +118,6 @@ Solution/
 │   │       ├── Repositories
 │   │       ├── ApplicationDbContext.cs
 │   │       └── UnitOfWork.cs
-│   ├
 │   ├── Infrastructure.Mongo
 │   ├── (ref: Domain)
 │   ├── Folders/
@@ -137,7 +131,6 @@ Solution/
 │   │   │   └── IdempotentDomainEventHandler.cs
 │   │   ├── ProjectionDbContext.cs
 │   │   └── ProjectionGateway.cs --> Repository
-│   ├
 │   ├── Presentation  --> 'Define api using apicontroller or minimalapi(recommand but will hard maintanin)' /
 │   │   ├── (ref: Application-Infrastructure)
 │   │   └── Folders/
@@ -160,7 +153,6 @@ Solution/
 │   │       └── DependencyInjection/
 │   │           ├── Extensions
 │   │           └── Options
-│   ├
 │   └── Contract --> 'Defined common for project'/
 │       └── Folders/
 │           ├── Abstractions
@@ -184,7 +176,6 @@ Solution/
 │               ├── Payment
 │               ├── ShoppingCart
 │               └── Warehouse
-├
 └── test --> 'Unit test' /
     ├── Architecture.Tests
     ├── API.Tests
@@ -193,7 +184,6 @@ Solution/
     ├── Infrastructure.Tests
     ├── Persistance.Tests
     └── Presentation.Tests
-
 
 ─ src: Contains the project's source code, divided into different layers and modules.
 ── API: Contains API endpoints to interact with the application.
