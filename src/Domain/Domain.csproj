@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Contract\Abstractions\" />
+    <Folder Include="Contract\DataTransferObjects\" />
+    <Folder Include="Contract\Enumerations\" />
+    <Folder Include="Contract\JsonConverters\" />
+    <Folder Include="Contract\Services\Account\" />
+    <Folder Include="Contract\Services\Catalog\" />
+    <Folder Include="Contract\Services\Communication\" />
+    <Folder Include="Contract\Services\Identity\" />
+    <Folder Include="Contract\Shared\" />
+    <Folder Include="Folders\" />
+    <Folder Include="Infrastructure\" />
+    <Folder Include="Infrastructure.MessageBus\" />
+    <Folder Include="Infrastructure.EF\" />
+    <Folder Include="Presentation\" />
+  </ItemGroup>
+
+</Project>

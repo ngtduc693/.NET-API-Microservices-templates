@@ -18,7 +18,7 @@ Solution/
 │   │       └── DependencyInjection/
 │   │           ├── Extensions
 │   │           └── Options
-│   ├
+│   |
 │   ├── Application --> 'Handler usercase using mediatR library'/
 │   │   ├── (ref: Domain) => User Repository interface at domainlayer
 │   │   └── Folders/
@@ -193,3 +193,16 @@ Solution/
     ├── Infrastructure.Tests
     ├── Persistance.Tests
     └── Presentation.Tests
+
+
+─ src: Contains the project's source code, divided into different layers and modules.
+── API: Contains API endpoints to interact with the application.
+── Application: Handles use cases using the MediatR library.
+── Domain: Contains core application entities and business logic.
+── Infrastructure: Integration with external services like Job, email, and token providers.
+── Infrastructure.MessageBus: Works with RabbitMQ, including consuming Commands and Events.
+── Persistence: Works with the database, using Entity Framework.
+── Infrastructure.Mongo: Works with MongoDB.
+── Presentation: Defines APIs using ApiController or MinimalAPI.
+── Contract: Defines common structures for the project, such as DTOs, Enums, JsonConverters, and services.
+─ test: Contains unit tests for each part of the system.
